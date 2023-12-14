@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  /* margin: 0px;
+  padding: 0px; */
+  /* right: 0;
+  left: 0; */
+  overflow: hidden;
+}
+#video-container {
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  margin:0px;
+  justify-content: center;
+  margin-top: -11vh;
+  height: 95vh;
+  z-index: 0;
+}
+#top-logo {
+  height: 5rem;
+  z-index: 1;
+  filter: invert();
+  -webkit-filter: invert();
+  transition: 0.25s;
+}
+#top-logo:hover {
+  filter: invert(1) drop-shadow(12px 12px 7px rgba(23, 244, 3, 0.5));
+}
+#nav-bar-container {
+  background-color: black;
+  color:white;
+  display: flex;
+  padding-top: 65px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  font-family: sans-serif;
+  z-index: 2;
+}
+#nav-bar-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 16vw;
+}
+#nav-bar-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-right: 16vw;
+  justify-content: center;
+}
+#nav-right-text-menu {
+display: flex;
+color: white;
+flex: 3;
+z-index: 2;
+}
+#console-button {
+display: flex;
+/* flex: 1; */
+position: relative;
+/* height: 35px; */
+/* width: 100%; */
+align-items: center;
+justify-content: center;
+border: 2px solid white;
+
+padding: 0.75rem 0.75rem;
+border-radius: 5px;
+background: black;
+/* background: rgb(255, 255, 255); */
+/* color: rgb(0, 0,0); */
+color:white;
+font-weight: bold;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+transition: all 0.2s ease-out;
+}
+#console-button:hover {
+background: white;
+color: rgb(11, 56, 28);
+box-shadow: 0 0 10px 5px rgba(23, 244, 3, 0.5);
+border: 2px solid rgba(23, 244, 3, 0.5);
+cursor: pointer;
+/* background: white; */
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 85vw;
+}
+.notification-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #1ABC9C;
+  background-color: #1ABC9C;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.notification-top-bar p {
+  padding: 0;
+  margin: 0;
+}
+.notification-top-bar p a {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #FFF;
+  color: #1ABC9C;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.notification-top-bar p a:hover {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
