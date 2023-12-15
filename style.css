@@ -29,15 +29,22 @@ body {
   filter: invert();
   -webkit-filter: invert();
   transition: 0.25s;
+  cursor: pointer;
 }
 
 #top-logo-text {
   align-self: center;
   z-index: 4;
+  cursor: pointer;
 }
 #top-logo:hover {
   filter: invert(1) drop-shadow(12px 12px 7px rgba(23, 244, 3, 0.5));
 }
+
+#top-logo-text:hover {
+  filter: drop-shadow(12px 12px 7px rgba(23, 244, 3, 0.5));
+}
+
 #nav-bar-container {
   background-color: black;
   color:white;
@@ -54,7 +61,29 @@ body {
   flex: 1;
   align-items: center;
   padding-left: 16vw;
+  color: white;
 }
+#book-session-text {
+  color: white;
+  text-decoration: underline;
+  transition: 0.25ms;
+  font-size: large;
+}
+#book-session-text:hover {
+  /* color: rgb(198, 215, 202); */
+  text-shadow:
+  0 0 3px #ffffff47,
+  0 0 5px #ffffff50,
+  0 0 10px #ffffff67,
+  0 0 20px #0fa,
+  0 0 40px #0fa,
+  0 0 62px #0fa;
+  /* 0 0 102px #0fa,
+  0 0 151px #0fa; */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #nav-bar-right {
   display: flex;
   flex: 1;
