@@ -186,10 +186,16 @@
 
 </body>
 <style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
     body {
         align-items: center;
         text-align: center;
         overflow: hidden;
+        height: 100%;
+        width: 100%;
     }
     #book-session-text {
         position: relative;
@@ -199,7 +205,7 @@
         transition: 0.25ms;
         font-size: xx-large;
         background-color: black;
-        box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.689);
+        box-shadow: 0px 0px 10px 10px black;
     }
     #book-session-text:hover {
         /* color: rgb(198, 215, 202); */
@@ -222,7 +228,7 @@
         font-size: xx-large;
         transform: perspective(0px);
         background-color: black;
-        box-shadow: 5px 0px 10px 10px black;
+        box-shadow: 0px 0px 10px 10px black;
     }
     #main-content-table {
         align-items: center;
@@ -232,6 +238,8 @@
     }
     #table-container {
         align-items: center;
+        overflow: hidden;
+        height: 100%;
     }
     table {
         z-index: -30;
