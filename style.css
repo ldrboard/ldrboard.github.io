@@ -64,6 +64,7 @@ body {
   color: white;
 }
 #book-session-text {
+  z-index: 50;
   color: white;
   text-decoration: underline;
   transition: 0.25ms;
